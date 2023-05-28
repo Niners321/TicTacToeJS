@@ -31,23 +31,63 @@ button:hover{
     padding: 10px;
 }
 
-.player-container{
-    padding: 10px;
-    font-size: 1.1rem;
-}
 
-#player-form{
+
+#players-container{
     display: flex;
     flex-direction: row;
     align-self: flex-end;
     justify-content: space-evenly;
     width:100%;
+    font-size: 1.1rem;
 }
 
-input{
-    background-color: white;
+.player{
+    font-size: 1.5rem;
 }
+
 
 #game-container{
     border: 1px solid black;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#game-status{
+    display: inline-block;
+
+}
+
+.gameboard{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 50%;
+    height: 75%;
+    border: 1px solid black;
+}
+
+.squares{
+    border: 2px solid black;
+    font-size: 8rem;
+    text-align: center;
+
+}
+
+#game-status-text {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#game-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked{
+    background-color: red;
 }
